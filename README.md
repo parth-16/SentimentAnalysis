@@ -4,7 +4,7 @@ Embarking on the journey of creating a Sentiment analyser holds the promise of u
 ### Goal
 In order to create a real-time sentiment analyser, I decided to test some models using the above dataset. This will help me understand which model works the best along with the required pre-processing and feature engineering techniques. 
 ### Dataset
-The dataset is present on Kaggle called Sentiment140 dataset with 1.6 million tweets. The dataset consists of 1,600,000 tweets and have been extracted using the twitter api.
+The dataset is present on Kaggle called [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140) with 1.6 million tweets. The dataset consists of 1,600,000 tweets and have been extracted using the twitter api.
 It consists of the following fields:
 1. **target**: the polarity of the tweet (0 = negative, 4 = positive)
 2. **ids**: The id of the tweet
@@ -15,7 +15,10 @@ It consists of the following fields:
 ### Exploratory Data Analysis
 1. The dataset consists of 1600000 rows and 6 columns.
 2. The only columns useful for this project are tweet and target.
-3. The number of positive and negative tweets are equal(800000 each) 
+3. The number of positive and negative tweets are equal(800000 each)
+   
+![image](https://github.com/parth-16/SentimentAnalysis/assets/59089155/c9764828-af25-4bb7-87b0-c6c1f63e4fa1)
+
 ### Data pre-processing
 1. **Reducing the sample size**
 The sample size that I will be using for the project is 100000 rows where I have taken 50000 tweets marked "Positive" and 50000 tweets marked "Negative" for simplicity.
@@ -28,7 +31,7 @@ Performing stemming and lemmatization is crucial for reducing words to their bas
 5. **Performing vectorization**
 Vectorization is essential to represent text data numerically, assigning weights to words based on their importance in a document relative to the entire text, enabling meaningful feature representation for machine learning models.
 6. **Performing train-test split**
-I have divided the dataset and assigned 80% to training and 20% to testing. 
+I have divided the dataset and assigned 95% to training and 5% to testing. 
 ### Model implementation
 The models that I have implemented are:
 Logistic Regression
@@ -37,8 +40,8 @@ Naive Bayes
 Random Forest
 Support Vector Machine
 ### Model evaluation
-### Inferences and Takeaways
 In terms of accuracy, SVM performs the best. Next best is the Logistic Regression model. Naive Bayes and Random Forest have almost equal accuracies and last is the KNN model.
+![image](https://github.com/parth-16/SentimentAnalysis/assets/59089155/2de4d3ff-8367-4ce6-afeb-b36f303a70e2)
 
 ### Future work
 1. I plan to implement more advanced deep learning architectures like transformer-based models (e.g., BERT, GPT) to capture more intricate patterns in sentiment data.
