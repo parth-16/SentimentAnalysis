@@ -17,17 +17,17 @@ It consists of the following fields:
 2. The only columns useful for this project are tweet and target.
 3. The number of positive and negative tweets are equal(800000 each) 
 ### Data pre-processing
-**Reducing the sample size**
+1. **Reducing the sample size**
 The sample size that I will be using for the project is 100000 rows where I have taken 50000 tweets marked "Positive" and 50000 tweets marked "Negative" for simplicity.
-**Stop word removal**
+2. **Stop word removal**
 Stop word removal involves eliminating common words (e.g., "the," "and," "is") from any text to focus on meaningful words and reduce noise in NLP tasks.
-**Removing punctuations, repeating characters, URLs, and Numbers**
+3. **Removing punctuations, repeating characters, URLs, and Numbers**
 Removing punctuations, repeating characters, URLs, and numbers in text preprocessing is essential to enhance the quality of NLP models by reducing noise, ensuring uniformity, and mitigating the impact of irrelevant or variable data patterns.
-**Performing Stemming and Lemmetization**
+4. **Performing Stemming and Lemmetization**
 Performing stemming and lemmatization is crucial for reducing words to their base or root form, promoting consistency in textual representation and improving the efficiency of language understanding and analysis by reducing variations of words.
-**Performing vectorization**
+5. **Performing vectorization**
 Vectorization is essential to represent text data numerically, assigning weights to words based on their importance in a document relative to the entire text, enabling meaningful feature representation for machine learning models.
-**Performing train-test split**
+6. **Performing train-test split**
 I have divided the dataset and assigned 80% to training and 20% to testing. 
 ### Model implementation
 The models that I have implemented are:
@@ -38,6 +38,9 @@ Random Forest
 Support Vector Machine
 ### Model evaluation
 ### Inferences and Takeaways
-1.  In terms of accuracy, SVM performs the best. Next best is the Logistic Regression model. Naive Bayes and Random Forest have almost equal accuracies and last is the KNN model.
+In terms of accuracy, SVM performs the best. Next best is the Logistic Regression model. Naive Bayes and Random Forest have almost equal accuracies and last is the KNN model.
 
 ### Future work
+1. I plan to implement more advanced deep learning architectures like transformer-based models (e.g., BERT, GPT) to capture more intricate patterns in sentiment data.
+2. I also plan to explore techniques for sentiment analysis that can handle multiple languages for improved user experience and also perform text summarization.
+3. I will be developing a real-time sentiment analyzer using this trained model to perform sentiment analysis on tweets extracted from the Twitter API in real-time.
