@@ -34,11 +34,11 @@ Vectorization is essential to represent text data numerically, assigning weights
 I have divided the dataset and assigned 95% to training and 5% to testing. 
 ### Model implementation
 The models that I have implemented are:
-Logistic Regression
-KNN
-Naive Bayes
-Random Forest
-Support Vector Machine
+1. Logistic Regression
+2. KNN
+3. Naive Bayes
+4. Random Forest
+5. Support Vector Machine
 ### Model evaluation
 
 ![image](https://github.com/parth-16/SentimentAnalysis/assets/59089155/2de4d3ff-8367-4ce6-afeb-b36f303a70e2)
