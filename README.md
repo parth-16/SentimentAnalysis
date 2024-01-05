@@ -40,7 +40,7 @@ Naive Bayes
 Random Forest
 Support Vector Machine
 ### Model evaluation
-In terms of accuracy, SVM performs the best. Next best is the Logistic Regression model. Naive Bayes and Random Forest have almost equal accuracies and last is the KNN model.
+
 ![image](https://github.com/parth-16/SentimentAnalysis/assets/59089155/2de4d3ff-8367-4ce6-afeb-b36f303a70e2)
 
 ### Future work
